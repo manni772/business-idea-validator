@@ -24,13 +24,13 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 15px; line-height: 1.6; }
   h1,h2,h3,h4 { font-family: 'Syne', sans-serif; }
- 
+
   .header { background: var(--accent); color: white; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
   .header-left h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; }
   .header-left p { font-size: 13px; opacity: 0.7; margin-top: 2px; }
   .history-toggle { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; padding: 7px 14px; border-radius: 8px; font-size: 13px; cursor: pointer; font-family: 'DM Sans', sans-serif; }
   .history-toggle:hover { background: rgba(255,255,255,0.25); }
- 
+
   .history-panel { background: var(--surface); border-bottom: 1px solid var(--border); padding: 1.25rem 2rem; display: none; }
   .history-panel.open { display: block; }
   .history-panel h3 { font-size: 14px; margin-bottom: 12px; color: var(--muted); font-weight: 500; }
@@ -46,15 +46,15 @@
   .compare-bar select { font-family: 'DM Sans', sans-serif; font-size: 13px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text); }
   .compare-btn { padding: 6px 14px; background: var(--accent); color: white; border: none; border-radius: 6px; font-size: 13px; cursor: pointer; font-family: 'DM Sans', sans-serif; }
   .empty-history { font-size: 13px; color: var(--muted); }
- 
+
   .main { max-width: 820px; margin: 0 auto; padding: 2rem 1.5rem; }
- 
+
   .api-row { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
   .api-row label { font-size: 12px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
   .api-row input { flex: 1; min-width: 200px; font-family: 'DM Sans', sans-serif; font-size: 14px; padding: 7px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); outline: none; }
   .api-row input:focus { border-color: var(--accent); }
   .api-note { font-size: 11px; color: var(--muted); width: 100%; margin-top: -4px; }
- 
+
   .input-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem; }
   .input-card h2 { font-size: 18px; margin-bottom: 1rem; }
   .input-card textarea { width: 100%; min-height: 130px; font-family: 'DM Sans', sans-serif; font-size: 14px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg); color: var(--text); resize: vertical; outline: none; line-height: 1.6; }
@@ -66,7 +66,7 @@
   .analyse-btn { margin-top: 1rem; width: 100%; padding: 13px; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: opacity 0.15s; }
   .analyse-btn:hover { opacity: 0.9; }
   .analyse-btn:disabled { opacity: 0.5; cursor: not-allowed; }
- 
+
   .loading { display: none; text-align: center; padding: 3rem 1rem; }
   .loading.show { display: block; }
   .spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 1rem; }
@@ -75,7 +75,7 @@
   .loading-steps { margin-top: 1rem; display: flex; flex-direction: column; gap: 6px; align-items: center; }
   .loading-step { font-size: 13px; color: var(--muted); opacity: 0; transition: opacity 0.5s; }
   .loading-step.visible { opacity: 1; }
- 
+
   .results { display: none; }
   .results.show { display: block; }
   .results-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 10px; }
@@ -85,7 +85,7 @@
   .action-btn:hover { background: var(--bg); }
   .action-btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
   .action-btn.primary:hover { opacity: 0.9; }
- 
+
   .verdict-banner { border-radius: 14px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
   .verdict-banner.promising { background: var(--green-bg); border: 1px solid #a8ddc0; }
   .verdict-banner.needs-work { background: var(--orange-bg); border: 1px solid #f0c090; }
@@ -101,7 +101,7 @@
   .verdict-banner.promising .feasibility-big .score-num { color: var(--green); }
   .verdict-banner.needs-work .feasibility-big .score-num { color: var(--orange); }
   .verdict-banner.high-risk .feasibility-big .score-num { color: var(--red); }
- 
+
   .radar-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.25rem; }
   .radar-wrap h3 { font-size: 14px; font-weight: 500; color: var(--muted); margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: 0.05em; text-align: center; }
   .radar-content { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center; }
@@ -112,7 +112,7 @@
   .dim-bar-track { flex: 1; height: 8px; background: var(--bg); border-radius: 20px; overflow: hidden; }
   .dim-bar-fill { height: 100%; border-radius: 20px; background: var(--accent); transition: width 0.6s ease; }
   .dim-score-num { font-size: 13px; font-weight: 500; color: var(--text); width: 28px; text-align: right; }
- 
+
   .competitor-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.25rem; }
   .competitor-card h3 { font-size: 14px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
   .competitor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
@@ -123,7 +123,7 @@
   .threat-high { background: var(--red-bg); color: var(--red); }
   .threat-medium { background: var(--orange-bg); color: var(--orange); }
   .threat-low { background: var(--green-bg); color: var(--green); }
- 
+
   .cards-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
   .result-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem 1.5rem; }
   .result-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
@@ -138,12 +138,12 @@
   .next-steps { list-style: none; }
   .next-steps li { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px; font-size: 14px; }
   .step-num { background: var(--accent-light); color: var(--accent); font-size: 11px; font-weight: 600; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
- 
+
   .error-card { background: var(--red-bg); border: 1px solid #f0b0ae; border-radius: 14px; padding: 1.25rem 1.5rem; display: none; margin-bottom: 1rem; }
   .error-card.show { display: block; }
   .error-card h3 { color: var(--red); font-size: 15px; margin-bottom: 6px; }
   .error-card p { font-size: 13px; color: var(--red); }
- 
+
   .compare-view { display: none; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; margin-bottom: 1.5rem; }
   .compare-view.show { display: block; }
   .compare-view h2 { font-size: 18px; margin-bottom: 1rem; }
@@ -153,12 +153,12 @@
   .compare-section { margin-bottom: 12px; }
   .compare-section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 4px; }
   .compare-section-text { font-size: 13px; line-height: 1.6; }
- 
+
   .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
   .badge.promising { background: var(--green-bg); color: var(--green); }
   .badge.needs-work { background: var(--orange-bg); color: var(--orange); }
   .badge.high-risk { background: var(--red-bg); color: var(--red); }
- 
+
   .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 100; align-items: center; justify-content: center; padding: 1rem; }
   .modal-overlay.show { display: flex; }
   .modal { background: var(--surface); border-radius: 16px; padding: 1.5rem; max-width: 480px; width: 100%; }
@@ -167,9 +167,9 @@
   .modal input:focus { border-color: var(--accent); }
   .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px; }
   .modal-note { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
- 
+
   .share-box { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 13px; font-family: var(--font-mono, monospace); word-break: break-all; color: var(--text); margin-bottom: 10px; }
- 
+
   @media print {
     .header, .api-row, .input-card, .loading, .results-actions, .history-panel, .history-toggle, .analyse-btn, .action-btn, .competitor-card, .modal-overlay { display: none !important; }
     .results { display: block !important; }
@@ -177,7 +177,7 @@
     .result-card { break-inside: avoid; border: 1px solid #ddd; }
     .main { padding: 0; max-width: 100%; }
   }
- 
+
   @media (max-width: 600px) {
     .header { padding: 1rem; }
     .main { padding: 1rem; }
@@ -186,7 +186,7 @@
 </style>
 </head>
 <body>
- 
+
 <div class="header">
   <div class="header-left">
     <h1>Business Idea Validator</h1>
@@ -194,7 +194,7 @@
   </div>
   <button class="history-toggle" onclick="toggleHistory()">Previous analyses (<span id="histCount">0</span>)</button>
 </div>
- 
+
 <div class="history-panel" id="historyPanel">
   <h3>Saved analyses</h3>
   <div class="history-grid" id="historyGrid"></div>
@@ -205,14 +205,14 @@
     <button class="compare-btn" onclick="runCompare()">Compare side by side</button>
   </div>
 </div>
- 
+
 <div class="main">
   <div class="api-row">
     <label>Groq API Key</label>
     <input type="password" id="apiKey" placeholder="gsk_..." />
     <p class="api-note">Your key is only used to call the Groq API and is never stored anywhere.</p>
   </div>
- 
+
   <div class="input-card" id="inputCard">
     <h2>Describe your business idea</h2>
     <textarea id="ideaText" placeholder="What is your idea? Who is it for? How does it make money? The more detail you give, the better the analysis."></textarea>
@@ -231,9 +231,9 @@
     </div>
     <button class="analyse-btn" id="analyseBtn" onclick="analyse()">Analyse my idea</button>
   </div>
- 
+
   <div class="error-card" id="errorCard"><h3>Analysis failed</h3><p id="errorMsg"></p></div>
- 
+
   <div class="loading" id="loading">
     <div class="spinner"></div>
     <p>Analysing your idea with AI...</p>
@@ -244,7 +244,7 @@
       <div class="loading-step" id="ls4">Building your report...</div>
     </div>
   </div>
- 
+
   <div class="compare-view" id="compareView">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:10px;">
       <h2>Comparing ideas</h2>
@@ -252,7 +252,7 @@
     </div>
     <div class="compare-cols" id="compareCols"></div>
   </div>
- 
+
   <div class="results" id="results">
     <div class="results-header">
       <h2>Analysis results</h2>
@@ -263,7 +263,7 @@
         <button class="action-btn primary" onclick="resetForm()">Analyse another idea</button>
       </div>
     </div>
- 
+
     <div class="verdict-banner" id="verdictBanner">
       <div>
         <div class="verdict-label">Verdict</div>
@@ -274,7 +274,7 @@
         <div class="score-denom">/ 10 feasibility</div>
       </div>
     </div>
- 
+
     <div class="radar-wrap">
       <h3>Dimension scores</h3>
       <div class="radar-content">
@@ -282,16 +282,16 @@
         <div class="score-dims" id="scoreDims"></div>
       </div>
     </div>
- 
+
     <div class="competitor-card" id="competitorCard">
       <h3>Competitor landscape</h3>
       <div class="competitor-grid" id="competitorGrid"></div>
     </div>
- 
+
     <div class="cards-grid" id="cardsGrid"></div>
   </div>
 </div>
- 
+
 <!-- Email Modal -->
 <div class="modal-overlay" id="emailModal">
   <div class="modal">
@@ -304,7 +304,7 @@
     </div>
   </div>
 </div>
- 
+
 <!-- Share Modal -->
 <div class="modal-overlay" id="shareModal">
   <div class="modal">
@@ -317,21 +317,21 @@
     </div>
   </div>
 </div>
- 
+
 <script>
 var savedAnalyses = [];
 try { savedAnalyses = JSON.parse(localStorage.getItem('biv2_history') || '[]'); } catch(e) { savedAnalyses = []; }
- 
+
 var currentResult = null;
 var currentDims = null;
- 
+
 function saveAll() { try { localStorage.setItem('biv2_history', JSON.stringify(savedAnalyses)); } catch(e) {} }
- 
+
 function toggleHistory() {
   document.getElementById('historyPanel').classList.toggle('open');
   renderHistory();
 }
- 
+
 function renderHistory() {
   document.getElementById('histCount').textContent = savedAnalyses.length;
   var grid = document.getElementById('historyGrid');
@@ -353,16 +353,16 @@ function renderHistory() {
     c2.innerHTML += '<option value="' + i + '">' + esc(h.snippet) + '</option>';
   });
 }
- 
+
 function delSaved(i) { savedAnalyses.splice(i, 1); saveAll(); renderHistory(); }
- 
+
 function loadSaved(i) {
   var h = savedAnalyses[i];
   if (!h) return;
   document.getElementById('historyPanel').classList.remove('open');
   displayResults(h.result, h.dims);
 }
- 
+
 function verdictClass(v) {
   if (!v) return 'needs-work';
   var vl = v.toLowerCase();
@@ -370,7 +370,7 @@ function verdictClass(v) {
   if (vl.indexOf('high risk') !== -1 || vl.indexOf('high-risk') !== -1) return 'high-risk';
   return 'needs-work';
 }
- 
+
 function runCompare() {
   var i1 = document.getElementById('cmp1').value;
   var i2 = document.getElementById('cmp2').value;
@@ -396,36 +396,36 @@ function runCompare() {
     '</div>';
   }).join('');
 }
- 
+
 function closeCompare() {
   document.getElementById('compareView').classList.remove('show');
   document.getElementById('inputCard').style.display = 'block';
 }
- 
+
 function analyse() {
   var key = document.getElementById('apiKey').value.trim();
   var idea = document.getElementById('ideaText').value.trim();
   if (!key) { alert('Please enter your Groq API key.'); return; }
   if (!idea) { alert('Please describe your business idea.'); return; }
- 
+
   var market = document.getElementById('targetMarket').value;
   var industry = document.getElementById('industry').value;
   var stage = document.getElementById('stage').value;
   var region = document.getElementById('market').value;
   var budget = document.getElementById('budget').value;
- 
+
   document.getElementById('errorCard').classList.remove('show');
   document.getElementById('loading').classList.add('show');
   document.getElementById('inputCard').style.display = 'none';
   document.getElementById('results').classList.remove('show');
- 
+
   var steps = ['ls1','ls2','ls3','ls4'];
   var si = 0;
   var stepTimer = setInterval(function() {
     if (si < steps.length) { document.getElementById(steps[si]).classList.add('visible'); si++; }
     else { clearInterval(stepTimer); }
   }, 900);
- 
+
   var prompt = 'You are an expert business analyst. Analyse the following business idea and return a structured report with EXACTLY these section headers on their own lines:\n\n' +
     'IDEA SUMMARY\nMARKET OPPORTUNITY\nCOMPETITOR ANALYSIS\nKEY RISKS\nREVENUE MODEL\nGO TO MARKET\nFEASIBILITY SCORE\nVERDICT\nCOMPETITORS LIST\n\n' +
     'Rules:\n' +
@@ -438,7 +438,7 @@ function analyse() {
     (market ? 'Target market: ' + market + '\n' : '') +
     (industry ? 'Industry: ' + industry + '\n' : '') +
     'Stage: ' + stage + '\nRegion: ' + region + '\nBudget: ' + budget;
- 
+
   fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
@@ -467,7 +467,7 @@ function analyse() {
     showError(e.message);
   });
 }
- 
+
 function parseResponse(text) {
   function extract(label, nextLabel) {
     var re = new RegExp(label + '\\s*\\n([\\s\\S]*?)(?=' + nextLabel + '|$)', 'i');
@@ -487,12 +487,12 @@ function parseResponse(text) {
   var feasScore = scoreMatch ? scoreMatch[1] : '7';
   return { ideaSummary, marketOpp, competitive, risks, revenue, goToMarket, feasRaw, feasScore, verdict: verdictRaw, competitorRaw };
 }
- 
+
 function parseDims(text) {
   var m = text.match(/SCORES:\s*Market\s*=\s*(\d+)[,\s]+Advantage\s*=\s*(\d+)[,\s]+Feasibility\s*=\s*(\d+)[,\s]+Revenue\s*=\s*(\d+)[,\s]+Timing\s*=\s*(\d+)/i);
   return m ? [parseInt(m[1]),parseInt(m[2]),parseInt(m[3]),parseInt(m[4]),parseInt(m[5])] : [7,6,7,6,7];
 }
- 
+
 function parseCompetitors(raw) {
   if (!raw) return [];
   var lines = raw.split('\n').filter(function(l) { return l.trim() && l.indexOf('|') !== -1; });
@@ -501,28 +501,28 @@ function parseCompetitors(raw) {
     return { name: parts[0] || '', type: parts[1] || '', threat: parts[2] || 'Medium', desc: parts[3] || '' };
   }).filter(function(c) { return c.name; });
 }
- 
+
 function showError(msg) {
   document.getElementById('inputCard').style.display = 'block';
   document.getElementById('errorCard').classList.add('show');
   document.getElementById('errorMsg').textContent = msg;
 }
- 
+
 function displayResults(r, dims) {
   currentResult = r;
   currentDims = dims;
   document.getElementById('inputCard').style.display = 'none';
   document.getElementById('results').classList.add('show');
- 
+
   var verdictLine = r.verdict.split('\n')[0].trim();
   var cls = verdictClass(verdictLine);
   var banner = document.getElementById('verdictBanner');
   banner.className = 'verdict-banner ' + cls;
   document.getElementById('verdictText').textContent = verdictLine;
   document.getElementById('feasScore').textContent = r.feasScore;
- 
+
   drawRadar(dims);
- 
+
   var DIMS = ['Market opportunity','Competitive advantage','Feasibility','Revenue potential','Timing'];
   document.getElementById('scoreDims').innerHTML = DIMS.map(function(d, i) {
     var val = dims[i] || 0;
@@ -533,7 +533,7 @@ function displayResults(r, dims) {
       '<div class="dim-score-num">' + val + '</div>' +
     '</div>';
   }).join('');
- 
+
   var competitors = parseCompetitors(r.competitorRaw);
   var cGrid = document.getElementById('competitorGrid');
   if (competitors.length) {
@@ -550,7 +550,7 @@ function displayResults(r, dims) {
   } else {
     document.getElementById('competitorCard').style.display = 'none';
   }
- 
+
   var riskLines = r.risks.split('\n').filter(function(l) { return l.trim(); });
   var risksHtml = riskLines.map(function(line) {
     var sev = line.match(/\[(HIGH|MEDIUM|LOW)\]/i);
@@ -559,12 +559,12 @@ function displayResults(r, dims) {
     var text = line.replace(/\[(HIGH|MEDIUM|LOW)\]/i, '').replace(/^[\-\*\d\.]+\s*/, '').trim();
     return '<div class="risk-item"><span class="risk-badge ' + sevClass + '">' + sevLabel + '</span><span>' + esc(text) + '</span></div>';
   }).join('');
- 
+
   var nextLines = r.verdict.split('\n').filter(function(l) { return l.match(/^\d+\.|^-/); });
   var stepsHtml = nextLines.slice(0,5).map(function(l, i) {
     return '<li><div class="step-num">' + (i+1) + '</div><span>' + esc(l.replace(/^\d+\.\s*|-\s*/, '')) + '</span></li>';
   }).join('');
- 
+
   var cards = [
     { icon: '💡', title: 'Idea summary', body: r.ideaSummary, type: 'text' },
     { icon: '📈', title: 'Market opportunity', body: r.marketOpp, type: 'text' },
@@ -575,7 +575,7 @@ function displayResults(r, dims) {
     { icon: '📊', title: 'Feasibility assessment', body: r.feasRaw, type: 'text' },
     { icon: '✅', title: 'Next steps', body: '<ul class="next-steps">' + stepsHtml + '</ul>', type: 'html' },
   ];
- 
+
   document.getElementById('cardsGrid').innerHTML = cards.map(function(c) {
     return '<div class="result-card">' +
       '<div class="result-card-header"><span class="result-card-icon">' + c.icon + '</span><span class="result-card-title">' + c.title + '</span></div>' +
@@ -583,7 +583,7 @@ function displayResults(r, dims) {
     '</div>';
   }).join('');
 }
- 
+
 function drawRadar(dims) {
   var canvas = document.getElementById('radarChart');
   var ctx = canvas.getContext('2d');
@@ -606,22 +606,22 @@ function drawRadar(dims) {
   ctx.font='12px DM Sans, sans-serif'; ctx.fillStyle='#6b6860'; ctx.textAlign='center';
   angles.forEach(function(a,i) { var lx=cx+Math.cos(a)*(r+26), ly=cy+Math.sin(a)*(r+26); ctx.fillText(labels[i],lx,ly+4); });
 }
- 
+
 function resetForm() {
   document.getElementById('results').classList.remove('show');
   document.getElementById('inputCard').style.display='block';
   document.getElementById('errorCard').classList.remove('show');
   document.getElementById('ideaText').value='';
 }
- 
+
 function printPDF() { window.print(); }
- 
+
 function openEmailModal() {
   if (!currentResult) return;
   document.getElementById('emailModal').classList.add('show');
 }
 function closeEmailModal() { document.getElementById('emailModal').classList.remove('show'); }
- 
+
 function sendEmail() {
   var to = document.getElementById('emailTo').value.trim();
   if (!to) { alert('Please enter an email address.'); return; }
@@ -640,7 +640,7 @@ function sendEmail() {
   window.location.href = 'mailto:' + encodeURIComponent(to) + '?subject=' + subject + '&body=' + body;
   closeEmailModal();
 }
- 
+
 function openShareModal() {
   if (!currentResult) return;
   var id = 'biv_share_' + Date.now();
@@ -658,9 +658,9 @@ function copyShareLink() {
     setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
   });
 }
- 
+
 function esc(t) { return (t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
- 
+
 function checkShareParam() {
   try {
     var params = new URLSearchParams(window.location.search);
@@ -673,10 +673,9 @@ function checkShareParam() {
     }
   } catch(e) {}
 }
- 
+
 renderHistory();
 checkShareParam();
 </script>
 </body>
 </html>
-
